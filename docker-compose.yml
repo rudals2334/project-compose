@@ -69,8 +69,8 @@ services:
       sc-eureka: { condition: service_healthy }
       mariadb:   { condition: service_healthy }
     # 외부에서 직접 확인하려면 유지, 게이트웨이만 열거면 주석 처리하고 expose 로만 사용
-    ports:
-      - "9081:8081"
+    #ports:
+     # - "9081:8081"
     # expose:
     #   - "8081"
     healthcheck:
