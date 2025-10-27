@@ -40,7 +40,7 @@ services:
 
   # 3) User Service
   sc-user-svc:
-    image: rudals831/project-user:0.1.6
+    image: rudals831/project-user:0.1.7
     container_name: project-user
     environment:
       - SERVER_PORT=8081
@@ -69,7 +69,7 @@ services:
   # 4) Spring Cloud Gateway
   scg-proxy:
     # 새로 빌드했다면 태그를 0.1.5 등으로 올려서 사용하세요.
-    image: rudals831/project-scg:0.1.6
+    image: rudals831/project-scg:0.1.8
     container_name: scg-proxy
     environment:
       - SERVER_PORT=8080
